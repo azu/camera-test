@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Camera test</title>
+</head>
+<body>
+<div>
+    <label htmlFor="selfie">Take a picture of your face:</label>
+
+    <input
+            type="file"
+            id="selfie"
+            name="selfie"
+            accept="image/*"
+            capture="user"
+    />
+
+    <hr/>
+
+    <label htmlFor="picture">Take a picture using back facing camera:</label>
+    <input
+            type="file"
+            id="picture"
+            name="picture"
+            accept="image/*"
+            capture="environment"
+    />
+    <hr/>
+    <p>Drop-down and Images only</p>
+    <input type="file" accept="capture=camera,image/*"/>
+</div>
+</body>
+</html>
