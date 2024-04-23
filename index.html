@@ -28,8 +28,23 @@
             capture="environment"
     />
     <hr/>
-    <p>Drop-down and Images only</p>
-    <input type="file" accept="capture=camera,image/*"/>
+    <p>
+        <label for="capture-file">Image or Camera:</label>
+        <input type="file" id="capture-file" accept="capture=camera,image/*"/>
+    </p>
+    <p>
+        <label for="soundFile">What does your voice sound like?:</label>
+        <input type="file" id="soundFile" capture="user" accept="audio/*"/>
+    </p>
+    <p>
+        <label for="videoFile">Upload a video:</label>
+        <input type="file" id="videoFile" capture="environment" accept="video/*"/>
+    </p>
+    <p>
+        <label for="imageFile">Upload a photo of yourself:</label>
+        <input type="file" id="imageFile" capture="user" accept="image/*"/>
+    </p>
+
 </div>
 </body>
 </html>
