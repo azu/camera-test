@@ -7,24 +7,28 @@
 </head>
 <body>
 <div>
-    <label htmlFor="selfie">Take a picture of your face:</label>
+    <p>
+        <label htmlFor="selfie">Take a picture of your face:</label>
+        <input
+                type="file"
+                id="selfie"
+                name="selfie"
+                accept="image/*"
+                capture="user"
+        />
 
-    <input
-            type="file"
-            id="selfie"
-            name="selfie"
-            accept="image/*"
-            capture="user"
-    />
+    </p>
+    <p>
+        <label htmlFor="picture">Take a picture using back facing camera:</label>
+        <input
+                type="file"
+                id="picture"
+                name="picture"
+                accept="image/*"
+                capture="environment"
+        />
 
-    <label htmlFor="picture">Take a picture using back facing camera:</label>
-    <input
-            type="file"
-            id="picture"
-            name="picture"
-            accept="image/*"
-            capture="environment"
-    />
+    </p>
     <p>
         <label for="capture-file">Image or Camera:</label>
         <input type="file" id="capture-file" accept="capture=camera,image/*"/>
@@ -45,12 +49,16 @@
         <label for="imageFile">Upload a photo of yourself:</label>
         <input type="file" id="imageFile" capture="user" accept="image/*"/>
     </p>
-<footer>
-    <ul>
-        <li><a title="HTML attribute: capture - HTML: HyperText Markup Language | MDN" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/capture">HTML attribute: capture - HTML: HyperText Markup Language | MDN</a></li>
-        <li><a title="Capturing camera/picture data without PhoneGap - An Update" href="https://www.raymondcamden.com/2016/06/03/capturing-camerapicture-data-without-phonegap-an-update">Capturing camera/picture data without PhoneGap - An Update</a></li>
-    </ul>
-</footer>
+    <footer>
+        <ul>
+            <li><a title="HTML attribute: capture - HTML: HyperText Markup Language | MDN"
+                   href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/capture">HTML attribute: capture -
+                HTML: HyperText Markup Language | MDN</a></li>
+            <li><a title="Capturing camera/picture data without PhoneGap - An Update"
+                   href="https://www.raymondcamden.com/2016/06/03/capturing-camerapicture-data-without-phonegap-an-update">Capturing
+                camera/picture data without PhoneGap - An Update</a></li>
+        </ul>
+    </footer>
 </div>
 </body>
 </html>
