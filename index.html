@@ -37,6 +37,15 @@
         <input type="file" id="camera-files" accept="capture=camera, image/*" multiple/>
     </p>
     <p>
+        <label htmlFor="picture">Camera Ony(capture="user" and no accept=image/*):</label>
+        <input
+                type="file"
+                id="camera-only"
+                name="camera-only"
+                capture="user"
+        />
+    </p>
+    <p>
         <label for="image-file">Image only(accept="image/*"):</label>
         <input type="file" id="image-file" accept="image/*"/>
     </p>
